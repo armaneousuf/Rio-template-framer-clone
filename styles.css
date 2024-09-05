@@ -18,6 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--ff-paragraphs);
   height: 100vh;
+  background-color: #f6f6f7;
 }
 
 img, picture, video, canvas, svg {
@@ -97,12 +98,13 @@ ul, li {
   cursor: pointer;
 }
 
-.hero-content {
+.hero {
   text-align: center;
 }
 
 .hero-content h1 {
   font-size: 4.6rem;
+  font-weight: 700;
   color: #202b38;
   line-height: .799;
   font-family: var(--ff-headers);
@@ -117,4 +119,54 @@ ul, li {
   color: #000;
   font-family: var(--ff-paragraphs);
   margin-top: 2rem;
+}
+
+.btn-hero {
+  padding: 10px 18px 10px 18px;
+  border: none;
+  border-radius: 60px;
+  background-color: var(--blue-cls);
+  color: #fff;
+  font-weight: 600;
+  margin: 15px;
+}
+
+.btn-hero:hover {
+  background-color: #202b38;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-img img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.hero-link {
+  text-align: center;
+  position: relative;
+  bottom: 35px;
+  margin-left: 25px;
+  font-size: 18px;
+  color: #000;
+}
+
+.hero-link-2 {
+  margin-left: 130px;
+}
+
+.hero-img {
+  transition: width 2s;
+}
+
+.hero-img:hover {
+  transition: 9ms all ease-in-out;
+  transform: scaleX(1.2);
 }
