@@ -8,6 +8,11 @@
   --ff-paragraphs: "Inter", sans-serif;
 }
 
+::selection {
+  background-color: #1f29365d;
+  color: #f6f6f7;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
