@@ -225,3 +225,57 @@ section {
   line-height: 1;
   margin-top: 20px;
 }
+
+
+.card-container {
+  display: flex;
+  padding: 20px 20px 5px 20px;
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .card-p {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+
+.card-container h2, p {
+  text-align: left;
+  padding: .4rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 20px 5px 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.svgs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.learn img {
+  position: relative;
+  left: 100px;
+  bottom: 25.5px;
+}
+
+.card-minus:hover {
+  transform: rotate(-2deg);
+  transition: 70ms all linear;
+}
+
+.card-plus:hover {
+  transform: rotate(2deg);
+  transition: 70ms all linear;
+}
