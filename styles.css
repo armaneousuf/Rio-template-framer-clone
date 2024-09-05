@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --blue-cls: #0000ee;
+  --ff-headers: "Montserrat", sans-serif;
+  --ff-paragraphs: "Inter", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-paragraphs);
+  height: 100vh;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul[role='list'], 
+ol[role='list'],
+ul, ol { 
+  list-style: none; 
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header.bg-img {
+  background-image: url(images/background-svg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 24vh;
+}
+
+.center-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+ul, li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.button-nav button {
+  padding: 10px 18px 10px 18px;
+  border: none;
+  border-radius: 60px;
+  background-color: var(--blue-cls);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button-nav button:hover {
+  background-color: #202b38;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 4.6rem;
+  color: #202b38;
+  line-height: .799;
+  font-family: var(--ff-headers);
+
+  span {
+    color: var(--blue-cls);
+  }
+}
+
+.hero-content p {
+  font-size: 19px;
+  color: #000;
+  font-family: var(--ff-paragraphs);
+  margin-top: 2rem;
+}
