@@ -382,6 +382,7 @@ section {
 
 .sec-4-content-1 {
   background-color: #fff;
+  color: var(--blue-cls);
   display: inline;
   padding: 5px;
   font-size: 17px;
