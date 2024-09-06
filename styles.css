@@ -417,7 +417,7 @@ section {
   font-size: 19px;
 }
 
-.profile {
+.profiles {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -425,3 +425,160 @@ section {
   margin-top: 20px;
 }
 
+.profile-cont {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.profile {
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 10px;
+  width: 300px;
+  background-color: #fff;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.profile span {
+  font-weight: normal;
+  color: #666;
+}
+
+.profile blockquote {
+  clear: both;
+  color: #666;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.stars {
+  color: var(--blue-cls);
+  font-size: 25px;
+  position: relative;
+  top: 20px;
+}
+
+.testimonial {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.testimonial p {
+  background-color: #fff;
+  display: inline;
+  font-size: 16px;
+  padding: 10px;
+  color: var(--blue-cls);
+}
+
+.testimonial h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 20px 0 20px 0;
+}
+
+/* accordion */
+
+details div {
+	border-right: 1px solid #c4c2c2;
+  border-left: 1px solid #c4c2c2;
+  border-bottom: 1px solid #c4c2c2;
+	padding: 1.5em;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  transition: 2s all ease-in;
+}
+
+details div > * + * {
+	margin-top: 1.5em;
+}
+
+details + details {
+	margin-top: .5rem;
+}
+
+summary {
+	list-style: none;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+summary {
+	border: 2px solid #c4c2c2;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 20px;
+	cursor: pointer;
+	position: relative;
+	padding-left: calc(1.75rem + .75rem + .75rem);
+  transition: all .3s;
+}
+
+summary:after {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: .75rem;
+	content: "➕";
+	width: 1.75rem;
+	height: 1.75rem;
+	background-color: #000;
+	color: #FFF;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+details[open] summary {
+	background-color: #eee;
+}
+
+details[open] summary::after {
+	content: "➖";
+}
+
+summary:hover {
+	background-color: #eee;
+}
+
+
+.accordion-texts {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.accordion-texts p {
+  background-color: #fff;
+  display: inline;
+  font-size: 17px;
+  border-radius: 10px;
+  padding: 15px;
+  color: var(--blue-cls);
+}
+
+.accordion-texts h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0 0 20px 0;
+}
