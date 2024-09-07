@@ -755,7 +755,7 @@ summary:hover {
   padding: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container {
     max-width: 100%; 
     padding: 15px;
@@ -835,4 +835,54 @@ summary:hover {
     left: 0px;
   }
 } 
-*/
+
+@media screen and (max-width: 770px) {
+  .media iframe {
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+  }
+  
+  .bg-img-2 {
+    display: none;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .sec-4-img img {
+    display: none;
+  }
+
+  .section-4th {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-cont {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .ycard {
+    flex-direction: column;
+  }
+
+  .foo-last {
+    flex-direction: column;
+  }
+
+  .foo-center {
+    position: relative;
+    left: 0px;
+  }
+  
+}
